@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xmerge Dev | Modern App Creation & Tools</title>
+    <meta name="description" content="A dev-centric website helping in creating modern and realistic apps for clients, and building tools and packages.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"></span>
+                Xmerge Dev
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#packages">Packages</a></li>
+            </ul>
+            <a href="#start" class="btn btn-outline nav-cta">Get Started</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge fade-up">Dev-Centric Ecosystem</div>
+                <h1 class="fade-up delay-1">Create Modern & <br/><span class="text-gradient">Realistic Apps</span></h1>
+                <p class="fade-up delay-2">We empower developers to deliver premium, state-of-the-art experiences for their clients while accelerating workflows through advanced tools and packages.</p>
+                <div class="hero-actions fade-up delay-3">
+                    <a href="#explore" class="btn btn-primary">Start Building</a>
+                    <a href="#docs" class="btn btn-secondary">Explore Documentation</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-up delay-4">
+                <div class="glass-panel">
+                    <div class="window-controls">
+                        <i></i><i></i><i></i>
+                    </div>
+                    <pre class="code-block"><code><span class="keyword">import</span> { XmergeClient } <span class="keyword">from</span> <span class="string">'@xmerge/core'</span>;
+
+<span class="keyword">const</span> app = <span class="keyword">new</span> XmergeClient({
+  <span class="property">theme</span>: <span class="string">'modern-dark'</span>,
+  <span class="property">aesthetics</span>: <span class="string">'premium'</span>,
+  <span class="property">performance</span>: <span class="string">'optimized'</span>
+});
+
+app.<span class="method">initialize</span>().<span class="method">then</span>(() => {
+  console.<span class="method">log</span>(<span class="string">'Ready to ship! 🚀'</span>);
+});</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="section-header fade-up">
+                <h2>Our Offerings</h2>
+                <p>Everything you need to craft exceptional digital experiences.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card fade-up">
+                    <div class="card-icon setup-icon">✦</div>
+                    <h3>Modern Applications</h3>
+                    <p>Build stunning, responsive, and dynamic web applications with premium aesthetics and smooth animations tailored for your clients.</p>
+                </div>
+                <div class="feature-card fade-up delay-1">
+                    <div class="card-icon tools-icon">⚡</div>
+                    <h3>Developer Tools</h3>
+                    <p>Workflow accelerators, CLI utilities, and debugging tools designed specifically to boost productivity and reduce friction.</p>
+                </div>
+                <div class="feature-card fade-up delay-2">
+                    <div class="card-icon packages-icon">📦</div>
+                    <h3>Smart Packages</h3>
+                    <p>Reusable architectures and modular components that perfectly drop into your projects, saving you hundreds of hours of coding.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section fade-up">
+            <div class="cta-container">
+                <h2>Ready to transform your development workflow?</h2>
+                <p>Join the ecosystem today and start shipping better products, faster.</p>
+                <a href="#join" class="btn btn-primary btn-large">Join Xmerge Dev</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="brand">
+                <span class="logo-icon"></span>
+                <span class="footer-logo">Xmerge Dev</span>
+            </div>
+            <p>&copy; 2026 Xmerge Dev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
